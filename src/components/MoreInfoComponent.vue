@@ -1,19 +1,16 @@
 <template>
   <div>
     <h2>Showing People Info</h2>
-    <h3>Id: {{id}}</h3>
-    <h3>First Name: {{firstName}}</h3>
-
     <div v-if="person">
         <ul class="list-group">
-        <li class="list-group-item">{{ person.firstName }}</li>
-        <li class="list-group-item">{{ person.lastName }}</li>
-        <li class="list-group-item">{{ person.age }}</li>
-        <!-- <li class="list-group-item">
+        <li class="list-group-item">Naam: {{ person.firstName }} {{ person.lastName }}</li>
+        <li class="list-group-item">Leeftijd: {{ person.age }}</li>
+        <li class="list-group-item">
+          Profielfoto: 
           <img :src="getImgUrl(person.img)"
                :alt="person.img"
                class="img-fluid">
-        </li> -->
+        </li>
         <li class="list-group-item">{{ person.info }}</li>
       </ul>
     </div>
@@ -37,12 +34,12 @@ export default {
 
     // fetch the correct country from the loaded data
     this.person = this.data.people.find(c => c.id === +this.id);
+  },
+    methods: {
+    getImgUrl(img) {
+      return require('../assets/' + img);
+    }
   }
-  //   methods: {
-  //   getImgUrl(img) {
-  //     return require('../assets/people/' + img);
-  //   }
-  // }
 }
 </script>
 

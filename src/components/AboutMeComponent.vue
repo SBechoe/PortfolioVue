@@ -7,7 +7,7 @@
     v-for="person in data.people" :key="person.id">
       <span :id="person.id"
       :title="person.firstName">
-      {{ person.id }} - {{ person.firstName }}
+      {{ person.firstName }}  {{ person.lastName }}
       </span>
     </li>
     </ul>

@@ -1,9 +1,9 @@
 <template>
-  <div id="nav">
-    <router-link to="/" exact>Home</router-link> |
-    <router-link to="/aboutMe" exact>About Me</router-link> |
-    <router-link to="/contact" exact>Contact</router-link>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/aboutMe">About Me</router-link> |
+    <router-link to="/contact">Contact</router-link>
+  </nav>
 </template>
 
 <script>

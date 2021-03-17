@@ -17,16 +17,18 @@ const data = {
 		{
 			id: 3,
       firstName: 'Nala',
-			lastName: '-',
+			lastName: ' ',
 			age: 1,
 			info: 'Dit is Nala',
+			img: 'nala.jpg'
 		},
 		{
 			id: 4,
       firstName: 'Simba',
-			lastName: '-',
+			lastName: ' 	',
 			age: 1,
 			info: 'Dit is Simba',
+			img: 'simba.jpg'
 		}
 	]
 };
