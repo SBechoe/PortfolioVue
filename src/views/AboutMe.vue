@@ -6,7 +6,7 @@
   import AboutMeComponent from '@/components/AboutMeComponent.vue'
 
   export default {
-    name: 'Contact',
+    name: 'AboutMe',
     components: {
       AboutMeComponent
     }
